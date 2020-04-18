@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <title>To Do List</title>
 </head>
 <body>
-    
+    <header>
+        <h1>TO-DO LIST</h1>
+    </header>
+    <nav class="estado-tarea">
+        <ul>
+            <li>Tareas incompletas</li>
+            <li>Tareas completadas</li>
+        </ul>
+    <nav>
+    <div class ="input-div">
+        <input class="input" type="text" placeholder="Agregar tareas...">
+        <button  class="addButton">Añadir</button>
+    </div>
+    <div class="container">
+        <div class="item">
+            <i class=" fa fa-circle-thin complete"></i>
+            <input type="text" class="item-input" value="sport" disabled>
+            <button class="editar">Editar</button>
+            <i class="fa fa-trash"></i>
+        </div>
+    </div>
+<script src="./scripts/main.js"></script>
 </body>
 </html>
