@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: rgba(0,0,0,0.1);
-    font-family: 'Titillium Web', sans-serif;
+    font-family: sans-serif;
 }
 
 /* ------------ container ------------ */
@@ -100,21 +100,22 @@ h2{
     max-width:285px;
 }
 
-.item button.editbutton{
+.item i.edit{
     position: absolute;
-    padding:3px 6px;
-    margin:0;
-    color: white;
     right:45px;
-    top:12px;
-    background-color: #4162f6;
-    border: none;
+    font-size: 25px;
+    top:10px;
 }
 
-.item button.editbutton:hover{
-    color:#e41eb9;
+.item i.edit:hover{
+    color:#af0000;
     cursor: pointer;
 }
+
+/*.item button.editbutton:hover{
+    color:#e41eb9;
+    cursor: pointer;
+}*/
 
 
 .lineThrough{

@@ -23,7 +23,9 @@ dateElement.innerHTML = today.toLocaleDateString("es-ES", options);
 // función añadir
 
 function addToDo (toDo, id, done, trash) {
-    if(trash){ return; }
+    if(trash){ 
+        
+        return; }
 
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
@@ -31,7 +33,7 @@ function addToDo (toDo, id, done, trash) {
     const item = `<li class="item">
                     <i class="fa ${DONE} co" job="complete" id="${id}"></i>
                     <p class="text ${LINE}">${toDo}</p>
-                    <button class="editbutton">Editar</button>
+                    <i class="fa fa-edit edit" job="edit" id="${id}"></i>
                     <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
                   </li> 
                 `;
@@ -54,6 +56,7 @@ document.addEventListener("keyup", function(even){
                 name: toDo,
                 id: id,
                 done: false,
+                edit: false,
                 trash: false
             });
 
@@ -74,9 +77,24 @@ function completeToDo(element){
 
 // editar elemento del to do
 
-/*function editToDo (element) {
+/*let editar = document.getElementById(`${id}`);
+  editar.addEventListener("click", function() {
+    let newedit = prompt("Ingrese el nuevo nombre de la tarea");
 
-}*/
+    if (newedit == null) {
+      return;
+    }
+
+    function hasWhiteSpace(newedit) {
+      return /^\s+$/.test(newedit);
+    }
+
+    if (hasWhiteSpace(newedit) == false && newedit !== "") {
+      task.querySelector(".texto").textContent = newedit;
+    } else {
+      alert("Error: Formato incorrecto");
+    }
+  });*/
   
 //eliminar elemento del to do
 function removeToDo(element){
