@@ -99,10 +99,29 @@ h2{
     background-color: #FFF;
     max-width:285px;
 }
+
+.item button.editbutton{
+    position: absolute;
+    padding:3px 6px;
+    margin:0;
+    color: white;
+    right:45px;
+    top:12px;
+    background-color: #4162f6;
+    border: none;
+}
+
+.item button.editbutton:hover{
+    color:#e41eb9;
+    cursor: pointer;
+}
+
+
 .lineThrough{
     text-decoration: line-through;
-    color : #ccc;
+        color : #ccc;
 }
+
 .item i.de{
     position: absolute;
     font-size: 25px;

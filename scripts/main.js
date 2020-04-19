@@ -1,6 +1,5 @@
 //seleccionar los elementos
 
-const  clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
@@ -32,6 +31,7 @@ function addToDo (toDo, id, done, trash) {
     const item = `<li class="item">
                     <i class="fa ${DONE} co" job="complete" id="${id}"></i>
                     <p class="text ${LINE}">${toDo}</p>
+                    <button class="editbutton">Editar</button>
                     <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
                   </li> 
                 `;
@@ -72,6 +72,12 @@ function completeToDo(element){
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 
+// editar elemento del to do
+
+/*function editToDo (element) {
+
+}*/
+  
 //eliminar elemento del to do
 function removeToDo(element){
     element.parentNode.parentNode.removeChild(element.parentNode);
