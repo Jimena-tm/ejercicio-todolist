@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/c86a904fc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>TO-DO LIST</h1>
-    </header>
-    <nav class="estado-tarea">
-        <ul>
-            <li>Tareas incompletas</li>
-            <li>Tareas completadas</li>
-        </ul>
-    <nav>
-    <div class ="input-div">
-        <input class="input" type="text" placeholder="Agregar tareas...">
-        <button  class="addButton">Añadir</button>
-    </div>
-    <div class="container">
-        <div class="item">
-            <i class=" fa fa-circle-thin complete"></i>
-            <input type="text" class="item-input" value="sport" disabled>
-            <button class="editar">Editar</button>
-            <i class="fa fa-trash"></i>
+    <div class ="container">
+        <div class = "header">
+            <h1>TO-DO LIST</h1>
+            <h2>Click en enter para añadir tarea</h2>
+            <div id="date"></div>
+        </div>
+        <div class="content">
+            <div class="add-to-do">
+                <i class="fa fa-plus-circle"></i>
+                <input type="text" id="input" placeholder="Agrega una tarea...">
+            </div>
+            <ul id="list">
+                <!--<li class="item">
+                        <i class="fa fa-circle-thin co" job="complete" id="0"></i>
+                        <p class="text">Drink Coffee</p>
+                        <i class="fa fa-trash-o de" job="delete" id="0"></i>
+                    </li>-->
+
+            </ul>
+
         </div>
     </div>
+    
 <script src="./scripts/main.js"></script>
 </body>
 </html>
